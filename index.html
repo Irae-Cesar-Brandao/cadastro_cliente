@@ -1,0 +1,183 @@
+﻿<!DOCTYPE html>
+<html lang="pt/BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<link rel="stylesheet" href="styles.css">-->
+    <title>MEU FORMULARIO CADASTRO CLIENTE</title>
+
+<style>
+
+body{
+  
+max-width: 64rem;
+  
+display: flex;
+  flex-direction: column;
+  
+flex-wrap: nowrap;
+  
+justify-content: justificate;
+  
+min-height: 100vh;
+  
+background-color: aquamarine;
+}
+
+h3{
+font-size: 25px;
+color:white;
+text-align: center;
+justify-content: center;
+display: flex;
+background-image: linear-gradient(black, red, blue); 
+border-style: solid;
+border-color: #0F6016;
+}
+
+#limpar{
+background-color: red;
+font-weight:bold;
+color: white;
+}
+
+#cadastrar{
+background-color: green;
+font-weight:bold;
+color: white;
+}
+
+table{
+width: 625px; 
+border:0;
+}
+
+h5{
+color: white;
+background-color:blue;
+}
+
+
+</style>
+</head>
+<body>
+<h3> Cadastro de Cliente </h3>
+
+
+    
+<form method="POST" action="/" target="_blank">
+    <table>
+      <tbody><tr>
+        <td width="69">Nome:</td>
+        <td width="546"><input id="nome" maxlength="60" name="nome" size="70" type="text" />
+          <span class="style1">*</span></td>
+      </tr>
+      <tr>
+        <td>Email:</td>
+        <td><input id="email" maxlength="60" name="email" size="70" type="text" />
+        <span class="style1">*</span></td>
+      </tr>
+      <tr>
+        <td>Sexo:</td>
+        <td><input checked="checked" name="sexo" type="radio" value="Masculino" />
+          Masculino 
+          <input name="sexo" type="radio" value="Feminino" />
+          Feminino <span class="style1">*</span> </td>
+      </tr>
+      <tr>
+        <td>DDD:</td>
+        <td><input id="ddd" maxlength="2" name="ddd" size="4" type="text" />
+        Telefone:
+
+          <input id="telefone" name="telefone" type="text" />
+		<span class="style1">* Apenas números</span></td>
+    
+
+      </tr>
+      <tr>
+        <td>Endereço:</td>
+        <td><input id="endereco" maxlength="70" name="endereco" size="70" type="text" />
+          <span class="style1">*</span></td>
+      </tr>
+      <tr>
+        <td>Cidade:</td>
+        <td><input id="cidade" maxlength="20" name="cidade" type="text" />
+          <span class="style1">*</span></td>
+      </tr>
+      <tr>
+        <td>Estado:</td>
+        <td><select id="estado" name="estado">
+          <option>Selecione...</option>
+          <option value="AC">AC</option>
+          <option value="AL">AL</option>
+          <option value="AP">AP</option>
+          <option value="AM">AM</option>
+          <option value="BA">BA</option>
+          <option value="CE">CE</option>
+          <option value="ES">ES</option>
+          <option value="DF">DF</option>
+          <option value="MA">MA</option>
+          <option value="MT">MT</option>
+          <option value="MS">MS</option>
+          <option value="MG">MG</option>
+          <option value="PA">PA</option>
+          <option value="PB">PB</option>
+          <option value="PR">PR</option>
+          <option value="PE">PE</option>
+          <option value="PI">PI</option>
+          <option value="RJ">RJ</option>
+          <option value="RN">RN</option>
+          <option value="RS">RS</option>
+          <option value="RO">RO</option>
+          <option value="RR">RR</option>
+          <option value="SC">SC</option>
+          <option value="SP">SP</option>
+          <option value="SE">SE</option>
+          <option value="TO">TO</option>
+            </select>
+          <span class="style1">*      </span></td>
+      </tr>
+      <tr>
+        <td>Bairro:</td>
+        <td><input id="bairro" maxlength="20" name="bairro" type="text" />
+          <span class="style1">*</span></td>
+      </tr>
+      <tr>
+        <td>País:</td>
+        <td><input id="pais" maxlength="20" name="pais" type="text" />
+          <span class="style1">*</span></td>
+      </tr>
+      <tr>
+        <td>Login:</td>
+        <td><input id="login" maxlength="12" name="login" type="text" />
+          <span class="style1">*</span></td>
+      </tr>
+      <tr>
+        <td>Senha:</td>
+        <td><input id="senha" maxlength="12" name="senha" type="password" />
+            <span class="style1">*</span></td>
+      </tr>
+      <tr>
+        <td colspan="2"><input id="news" checked="checked" name="news" type="checkbox" value="ATIVO" />
+  Desejo receber novidades e informações sobre o conteúdo deste site. </td>
+      </tr>
+      <tr>
+        <td colspan="2"><p>
+          <input id="cadastrar" name="cadastrar" type="submit" value="Cadastrar" /> 
+          
+  
+            <input id="limpar" name="limpar" type="reset" value="Limpar" />
+            
+  
+            <span class="style1">*     Campos com asteriscos (*) são obrigatórios!          </span></p>
+        <p> </p></td>
+      </tr>
+    </tbody></table>
+  </form>
+    
+</body>
+<footer>
+	<h5> Elaborado por:  Iraê César Brandão - LuckWay Informatica </h5>
+</footer>
+</html>
